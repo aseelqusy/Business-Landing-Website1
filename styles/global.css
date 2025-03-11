@@ -5,27 +5,47 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  padding: 5px;
+}
 
+html {
+  scroll-padding-top: 80px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #ffdbe7;
+  margin-top: auto;
+  position: relative;
+}
 
 .header,
 .navbar,
-.hero, .footer {
-  background-color:#ffdbe7;
+.hero,
+.footer {
+  background-color: #ffdbe7;
   background-size: cover;
   background-position: center;
-  color: rgb(8, 8, 8); 
+  color: rgb(8, 8, 8);
   margin-bottom: 20px;
 }
 
 .navbar {
   position: fixed;
-  margin: 35px;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
   padding: 15px 30px;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 9999;
+  width: auto;
+  max-width: 90%;
 }
 
 .ul {
@@ -35,7 +55,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .ul li {
@@ -47,19 +67,9 @@
   color: rgb(250, 24, 186);
 }
 
-.ul li a:hover {
-  color: white;
-  background: #ef3ed238;
-}
-.footer {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-color: #cb718f;
-  color: rgb(8, 8, 8);
-  padding: 10px 0;
+.ul li:hover {
+  color: #fff;
+  background: #ee42b438;
 }
 
 #footerP {
@@ -81,9 +91,49 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh; 
+  height: 30vh;
   text-align: center;
   grid-area: hero;
   margin-bottom: 10px;
+  padding-top: 50px;
 }
+
+/* for the mobile phones */
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* for ipad and tablet */
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: auto;
+    position: fixed;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+  }
+
+  .ul {
+    gap: 20px;
+  }
+}
+
+/* for pc screen and laptops*/
+@media screen and (min-width: 900px) {
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: #ffdbe7; 
+    padding: 10px;
+    margin-top: auto; 
+    position: relative;
+  }
+  .ul {
+    gap: 50px;
+  }
+}
+
 

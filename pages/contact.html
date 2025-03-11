@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charest="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is the description of my webpage">
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="/css/global.css">
-        <link rel="stylesheet" href="/css/contact.css">
-
-    </head>
-    <header>
-        <nav class="navbar" id="nav">
-            <ul class="ul">
-                <li><a href="/pages/home.html">Home</a></li>
-                <li><a href="home.html#about">About</a></li>
-                <li><a href="home.html#services">Services</a></li>
-                <li><a href="/pages/contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>KOCHI SOLUTIONS</h1>
-        <h2>Think Positive.</h2>
-        <h2>Think Kochi !! </h2>
-    </section>
-    <body>
-        <main class="container">
-            <aside class="contact-info">
-                <h2>Contact Details</h2>
-                <h3>contact@kochi.com</h3>
-                <h3>(555) 555-555</h3>
-                <h3><strong>Central HQ</strong></h3>
-            </aside>
-            <form class="contact-form">
-                <h2>Online Inquiry</h2>
-                <div class="data">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"
-                    placeholder="e.g John Smith" required 
-                    pattern="[A-Za-z]" minlength="4">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"
-                    placeholder="e.g name@domain.tld" required >
-                    <label for="msg">Message:</label>
-                    <textarea type="text" id="msg" name="msg"  placeholder="Type your message here (20-500) characters" required
-                    pattern="[A-Za-z0-9]{20,500}" minlength="20" maxlength="500"></textarea>
-                    <button id="submit">SUBMIT</button>
-                    <button id="reset">RESET</button>
-                </div>
-                
-            </form>
-            
-        </main>
-
-    </body>
-    <footer>
-        <p id="footerP">Copyright &copy; Kochi <abbr title="Incorporated">Inc</abbr>. 
-        <time datetime="2024">2024</time>. Developed by Eric Kovalevskyy.</p>
-    </footer>
+  <head>
+    <meta charest="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Kochi Solutions for inquiries and support."
+    />
+    <title>Contact page</title>
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <header>
+    <nav class="navbar" id="nav">
+      <ul class="ul">
+        <li><a href="/pages/home.html">Home</a></li>
+        <li><a href="home.html#about">About</a></li>
+        <li><a href="home.html#services">Services</a></li>
+        <li><a href="/pages/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>KOCHI SOLUTIONS</h1>
+    <h2>Think Positive.</h2>
+    <h2>Think Kochi !!</h2>
+  </section>
+  <body>
+    <main class="container">
+        <!--Cntact info-->
+      <aside class="contact-info">
+        <h2>Contact Details</h2>
+        <h3>contact@kochi.com</h3>
+        <h3>(555) 555-555</h3>
+        <h3>
+          <strong><address>Central HQ</address></strong>
+        </h3>
+      </aside>
+      <!--Cntact form-->
+      <form class="contact-form">
+        <h2>Online Inquiry</h2>
+        <div class="data">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g John Smith"
+            required
+            pattern="[A-Za-z]"
+            minlength="4"
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g name@domain.tld"
+            required
+          />
+          <label for="msg">Message:</label>
+          <textarea
+            type="text"
+            id="msg"
+            name="msg"
+            placeholder="Type your message here (20-500) characters"
+            required
+            pattern="[A-Za-z0-9]{20,500}"
+            minlength="20"
+            maxlength="500"
+          ></textarea>
+          <button id="submit">SUBMIT</button>
+          <button id="reset">RESET</button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <footer class="footer">
+    <p id="footerP">
+      Copyright &copy; Kochi <abbr title="Incorporated">Inc</abbr>.
+      <time datetime="2024">2024</time>. Developed by Eric Kovalevskyy.
+    </p>
+  </footer>
 </html>
