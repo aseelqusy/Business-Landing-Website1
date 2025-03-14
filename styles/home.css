@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0 20px; /* Added padding for left and right */
+  padding: 0 20px; 
 }
 
 #explore {
@@ -98,6 +98,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .about-figure img {
@@ -107,17 +108,38 @@ body {
 }
 
 .about-figure figcaption {
-  margin-top: 10px; /* Ensure caption appears under the image */
+  display: block;
+  width: 100%;
+  padding-top: 10px;
   font-size: 0.9em;
   color: #555;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-figure img {
+    width: 100%;
+  }
+  .about-figure figcaption {
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+  }
 }
 
 .footer {
   width: 100%;
   text-align: center;
   background-color: #ffdbe7;
-  padding: 10px;
+  padding: 20px;
   margin-top: auto;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 767px) {
